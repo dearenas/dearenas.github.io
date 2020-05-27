@@ -104,8 +104,8 @@
 
                 materials.preload();
 
-                materials.materials.default.map.magFilter = THREE.NearestFilter;
-                materials.materials.default.map.minFilter = THREE.LinearFilter;
+                //materials.materials.default.map.magFilter = THREE.NearestFilter;
+                //materials.materials.default.map.minFilter = THREE.LinearFilter;
 
                 var objLoader = new THREE.OBJLoader();
                 objLoader.setMaterials(materials);
@@ -150,31 +150,6 @@
 
         }
 
-        function onKeyboardEvent(e) {
-
-            if (e.code === 'KeyL') {
-
-                lighting = !lighting;
-
-                if (lighting) {
-
-                    ambient.intensity = 0.25;
-                    scene.add(keyLight);
-                    scene.add(fillLight);
-                    scene.add(backLight);
-
-                } else {
-
-                    ambient.intensity = 1.0;
-                    scene.remove(keyLight);
-                    scene.remove(fillLight);
-                    scene.remove(backLight);
-
-                }
-
-            }
-
-        }
 
         function animate() {
 
