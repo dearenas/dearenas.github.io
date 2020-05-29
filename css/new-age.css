@@ -111,13 +111,7 @@ section h2 {
   color: #fdcc52;
 }
 
-@media (max-width: 768px) {
-  header.masthead {
-    height: 100%;
-    min-height: 769px;
-    background: url("../img/movil.png")
-  }
-
+@media (min-width: 992px) {
   #mainNav {
     border-color: transparent;
     background-color: transparent;
@@ -157,18 +151,18 @@ section h2 {
 }
 
 header.masthead {
-  position: relative; 
+  position: relative;
   width: 100%;
   padding-top: 150px;
   padding-bottom: 100px;
   color: white;
-  background: url("../img/Imagen24.png")
+  background: url("../img/Imagen24.png");
 }
-  
+
 header.masthead .header-content {
   max-width: 500px;
   margin-bottom: 100px;
-  text-align: center; 
+  text-align: center;
 }
 
 header.masthead .header-content h1 {
@@ -184,15 +178,33 @@ header.masthead .device-container {
 header.masthead .device-container .screen img {
   border-radius: 3px;
 }
+@media (min-width: 360px) {
+  header.masthead {
+   
+    min-height: 775px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-image: url("../img/movil.png");
+  }
+  header.masthead .header-content {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  header.masthead .header-content h1 {
+    font-size: 50px;
+  }
+  header.masthead .device-container {
+    max-width: 325px;
+  }
+}
+
 
 @media (min-width: 992px) {
-
   header.masthead {
     height: 100vh;
     min-height: 775px;
     padding-top: 0;
     padding-bottom: 0;
-    background: url("../img/Imagen24.png")
   }
   header.masthead .header-content {
     margin-bottom: 0;
@@ -229,6 +241,19 @@ section.download .badges .badge-link img {
   height: 60px;
 }
 
+@media (min-width: 768px) {
+  section.download .badges .badge-link {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  section.download h2 {
+    font-size: 70px;
+  }
+}
+
 section.features .section-heading {
   margin-bottom: 100px;
 }
@@ -249,6 +274,12 @@ section.features .feature-item {
 
 section.features .device-container {
   margin-bottom: 100px;
+}
+
+@media (min-width: 992px) {
+  section.features .device-container {
+    margin-bottom: 0;
+  }
 }
 
 section.features .feature-item {
@@ -289,6 +320,12 @@ section.cta .cta-content h2 {
   margin-top: 0;
   margin-bottom: 25px;
   color: white;
+}
+
+@media (min-width: 768px) {
+  section.cta .cta-content h2 {
+    font-size: 80px;
+  }
 }
 
 section.cta .overlay {
