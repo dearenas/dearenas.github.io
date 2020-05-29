@@ -112,7 +112,14 @@ section h2 {
 }
 
 @media (min-width: 992px) {
-
+  header.masthead {
+    position: relative; 
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    color: white;
+    background: url("../img/Imagen24.png")
+  }
 
   #mainNav {
     border-color: transparent;
@@ -182,11 +189,13 @@ header.masthead .device-container .screen img {
 }
 
 @media (min-width: 992px) {
+
   header.masthead {
     height: 100vh;
     min-height: 775px;
     padding-top: 0;
     padding-bottom: 0;
+    background: url("../img/Imagen24.png")
   }
   header.masthead .header-content {
     margin-bottom: 0;
@@ -223,19 +232,6 @@ section.download .badges .badge-link img {
   height: 60px;
 }
 
-@media (min-width: 768px) {
-  section.download .badges .badge-link {
-    display: inline-block;
-    margin-bottom: 0;
-  }
-}
-
-@media (min-width: 768px) {
-  section.download h2 {
-    font-size: 70px;
-  }
-}
-
 section.features .section-heading {
   margin-bottom: 100px;
 }
@@ -256,12 +252,6 @@ section.features .feature-item {
 
 section.features .device-container {
   margin-bottom: 100px;
-}
-
-@media (min-width: 992px) {
-  section.features .device-container {
-    margin-bottom: 0;
-  }
 }
 
 section.features .feature-item {
