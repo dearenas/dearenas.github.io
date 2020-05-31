@@ -681,7 +681,7 @@
         // #### `preloader` Option ####
         // `Number` (pixels), since 1.1
         //
-        preloader:              5,
+        preloader:              2,
 
         // ~~~
         //
