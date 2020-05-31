@@ -678,6 +678,7 @@
         //
         klass:                 '',
 
+        
         // #### `preloader` Option ####
         // `Number` (pixels), since 1.1
         //
