@@ -13,10 +13,10 @@
       top: -100px;
     }
 
-    #image-bosques-independencia{
+    #image-bosques-independencia {
       width: 100%;
     }
-    
+
     .reel-cache img {
       position: absolute;
       width: 10px;
@@ -1697,7 +1697,7 @@
 
     .reel-overlay {
       text-align: center;
-      display: inherit!important;
+      display: inherit !important;
     }
 
     #slides {
@@ -2502,8 +2502,11 @@
       color: rgb(255, 255, 255);
     }
   </style>
-    <link href="/reel/" rel="stylesheet" type="text/css" />
+  <link href="/reel/" rel="stylesheet" type="text/css" />
+  <link href="/tiny-slider/tiny-slider.css" rel="stylesheet" type="text/css" />
+
   <script src='https://code.jquery.com/jquery-1.9.1.min.js' type='text/javascript'></script>
+  <script src='./tiny-slider/tiny-slider.js' type='text/javascript'></script>
   <script src='/reel/jquery.reel.js' type='text/javascript'></script>
 </head>
 
@@ -2519,7 +2522,13 @@
           <h2 id="project-location" class="col-padding-left overlay-location">Guadalajara</h2>
         </div>
         <div id="project-description"
-          class="col-8 two-column-text col-padding-left col-padding-right overlay-description">El proyecto Bosques Independencia pretende mirar la arquitectura desde una perspectiva humana. Donde el usuario y la naturaleza se revalorizan más allá del negocio inmobiliario, que retoma aquellos espacios que fueron excluidos, como el balcón-terraza y áreas verdes de calidad para integrarlos al programa de necesidades del proyecto como una respuesta ante la situación que vivimos actualmente. Donde la sala, el comer y la habitación no son solo los espacios básicos para vivir y desarrollarse como ser humano, si no también aquellos que fusionan el interior con el exterior. </div>
+          class="col-8 two-column-text col-padding-left col-padding-right overlay-description">El proyecto Bosques
+          Independencia pretende mirar la arquitectura desde una perspectiva humana. Donde el usuario y la naturaleza se
+          revalorizan más allá del negocio inmobiliario, que retoma aquellos espacios que fueron excluidos, como el
+          balcón-terraza y áreas verdes de calidad para integrarlos al programa de necesidades del proyecto como una
+          respuesta ante la situación que vivimos actualmente. Donde la sala, el comer y la habitación no son solo los
+          espacios básicos para vivir y desarrollarse como ser humano, si no también aquellos que fusionan el interior
+          con el exterior. </div>
       </div>
       <div class="row hero margin-top">
         <img class="overlay-hero" src="/img/76.jpg">
@@ -2547,13 +2556,13 @@
           </div>
         </div>
       </div>
-      
+
       <div class="row margin-top interactive-render">
-        <img id="image-bosques-independencia" src="/reel/greta/greta.jpg"/>
+        <img id="image-bosques-independencia" src="/reel/greta/greta.jpg" />
       </div>
 
       <div class="">
-        <div class="">
+        <div class="row">
           <div class="col-4">
             <div class="top-line">
               <div class="text-sm margin-bottom-quarter">Cliente</div>
@@ -2567,6 +2576,15 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="row da-slider">
+          <div><img src="./slider/1.png"></div>
+          <div><img src="./slider/2.png"></div>
+        </div>
+        <div class="slider-dots">
+          <button></button>
+          <button></button>
+          <button></button>
         </div>
       </div>
     </div>
@@ -2595,6 +2613,17 @@
         }
       }
     });
+
+    var slider = tns({
+      loop: false,
+      container: '.da-slider',
+      items: 1,
+      slideBy: 'page',
+      autoplay: false,
+      controls: false,
+      navContainer: ".slider-dots"
+    });
+
   </script>
 </body>
 
